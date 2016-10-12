@@ -136,6 +136,73 @@ a {
   float: left;
   margin-bottom: 10px; }
 
+/*SECTION PARTNERS*/
+.section-title--partners {
+  margin-top: 29px;
+  line-height: 24px; }
+
+.partners__item {
+  width: 100%;
+  padding: 0 35px;
+  margin: 0 auto 23px; }
+  .partners__item--last {
+    margin-bottom: 40px; }
+
+.partners__img-wrap {
+  display: inline-block;
+  position: relative; }
+
+.partners__img {
+  width: auto;
+  height: 100%; }
+
+.partners__icon {
+  background-color: #ff4e50;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #fff; }
+
+.partners__description {
+  font-family: "robotolight", Arial, sans-serif;
+  color: #666;
+  font-size: 13.97px;
+  line-height: 18px; }
+
+.partners__title {
+  margin: 16px 0 12px; }
+
+.icon-tv,
+.icon-plane,
+.icon-flask,
+.icon-cup {
+  line-height: 28px;
+  font-size: 18px; }
+
+.icon-cup {
+  background-color: #1cd7ad; }
+
+.icon-flask {
+  background-color: #ffa507; }
+
+.icon-plane {
+  background-color: #4e73db; }
+
+.btn--large--stroke {
+  background-color: transparent;
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+  padding: 10px 60px; }
+  .btn--large--stroke:hover {
+    color: #ec4a4c;
+    border: 2px solid #ec4a4c;
+    background: transparent; }
+
 /*media queries*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -220,7 +287,18 @@ a {
     margin-right: 20px;
     margin-bottom: 0; }
     .works__item--last {
-      margin-right: 0; } }
+      margin-right: 0; }
+  /*PARTNERS*/
+  .section-title--partners {
+    margin-bottom: 33px; }
+  .partners__item {
+    float: left;
+    width: 50%;
+    padding: 0 36px;
+    margin-bottom: 50px; }
+  .partners__wrap {
+    max-width: 580px;
+    margin: 0 auto; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 960px) {
@@ -236,7 +314,15 @@ a {
   /*WORKS*/
   .works__item {
     width: 300px;
-    height: 400px; } }
+    height: 400px; }
+  /*PARTNERS*/
+  .partners__item {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 44px; }
+  .partners__wrap {
+    max-width: 100%; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
