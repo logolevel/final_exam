@@ -1,0 +1,243 @@
+/*fonts*/
+/*colors*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?y1jss7");
+  src: url("../fonts/icomoon/icomoon.eot?y1jss7#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?y1jss7") format("truetype"), url("../fonts/icomoon/icomoon.woff?y1jss7") format("woff"), url("../fonts/icomoon/icomoon.svg?y1jss7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold/montserrat-bold.eot");
+  src: url("../fonts/montserrat-bold/montserrat-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold/montserrat-bold.woff") format("woff"), url("../fonts/montserrat-bold/montserrat-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat-regular/montserrat-regular.eot");
+  src: url("../fonts/montserrat-regular/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular/montserrat-regular.woff") format("woff"), url("../fonts/montserrat-regular/montserrat-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light/roboto-light.eot");
+  src: url("../fonts/roboto-light/roboto-light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light/roboto-light.woff2") format("woff2"), url("../fonts/roboto-light/roboto-light.woff") format("woff"), url("../fonts/roboto-light/roboto-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*our*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "montserratbold", Arial, sans-serif; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  a:hover {
+    color: #eee; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.btn {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 2px solid transparent; }
+  .btn:hover {
+    background-color: #ec4a4c;
+    color: #fff; }
+
+.btn--large {
+  padding: 10px 35px;
+  letter-spacing: 1px;
+  background-color: #ff4e50; }
+
+/*HEADER*/
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center; }
+
+.header {
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 540px;
+  text-align: center;
+  color: #fff; }
+
+.header__top {
+  padding-top: 20px; }
+
+.header__top-logo {
+  font-size: 20px;
+  letter-spacing: 2.5px; }
+
+.reg {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 115px; }
+  .reg__item {
+    display: inline-block;
+    margin-right: 10px; }
+  .reg__link {
+    display: block;
+    padding: 10px 15px; }
+    .reg__link:hover {
+      border: 2px solid #fff;
+      background-color: transparent; }
+    .reg__link--right {
+      margin-left: -8px; }
+
+.header__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 33px;
+  line-height: 34px;
+  letter-spacing: 1.5px; }
+
+.header__subtitle {
+  font-size: 18px;
+  font-family: "robotolight", Arial, sans-serif;
+  margin: 10px 0 26px;
+  padding: 0 30px;
+  line-height: 22px;
+  letter-spacing: 0.9px; }
+
+/*styles to write here*/
+/*SECTION WORKS*/
+.section-title {
+  font-size: 22px;
+  margin: 37px 0 15px;
+  letter-spacing: 0.2px; }
+
+.works__item {
+  width: 300px;
+  height: 240px;
+  background-color: #eee;
+  float: left;
+  margin-bottom: 10px; }
+
+/*media queries*/
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /*HEADER*/
+  .container {
+    min-width: 768px;
+    padding: 0 10px; }
+  .reg {
+    width: 50%;
+    float: right;
+    text-align: right; }
+    .reg__item {
+      margin-right: 0; }
+  .header__top-logo {
+    float: left;
+    padding: 10px 0;
+    margin-left: -10px;
+    letter-spacing: 1px; }
+  .header {
+    min-height: 700px; }
+    .header__top {
+      padding: 37px 50px 0; }
+    .header__title {
+      font-size: 52px;
+      line-height: 60px;
+      padding: 0 65px;
+      margin-top: 29px; }
+    .header__subtitle {
+      font-size: 24px;
+      padding: 20px 0;
+      letter-spacing: 0.1px; }
+  .btn--large {
+    padding: 12px 15px; }
+  /*WORKS*/
+  .section-title {
+    margin: 98px 0 35px;
+    letter-spacing: 0; }
+  .works__item {
+    width: 235px;
+    height: 400px;
+    margin-right: 20px;
+    margin-bottom: 0; }
+    .works__item--last {
+      margin-right: 0; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 960px) {
+  .container {
+    max-width: 960px;
+    padding: 0 10px; }
+  .header__top {
+    padding: 37px 0 0; }
+  .header__title {
+    padding: 0 160px; }
+  .header__top-logo {
+    margin-left: 0; }
+  /*WORKS*/
+  .works__item {
+    width: 300px;
+    height: 400px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

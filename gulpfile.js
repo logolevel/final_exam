@@ -11,12 +11,14 @@ var gulp 				 = require('gulp')
 		pngquant		 = require('imagemin-pngquant'),
 		cache				 = require('gulp-cache'),
 		autoprefixer = require('gulp-autoprefixer'),
-		spritesmith  = require('gulp.spritesmith');
+		spritesmith  = require('gulp.spritesmith'),
+		plumber 		 = require('gulp-plumber');
 
 /*convert sass to css*/
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.sass')
 		.pipe(sass())
+		.pipe(plumber())
 		.pipe(autoprefixer(['last 15 versions','ie 8'], { cascade: true }))
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSynk.reload({stream: true}))

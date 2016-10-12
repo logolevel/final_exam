@@ -59,12 +59,64 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	/*HEADER*/
+	.container
+		min-width: 768px
+		padding: 0 10px
+	.reg
+		width: 50%
+		float: right
+		text-align: right
+		&__item
+			margin-right: 0
+	.header__top-logo
+		float: left
+		padding: 10px 0
+		margin-left: -10px
+		letter-spacing: 1px;
+	.header
+		min-height: 700px
+		&__top
+			padding: 37px 50px 0
+		&__title
+			font-size: 52px
+			line-height: 60px
+			padding: 0 65px
+			margin-top: 29px
+		&__subtitle
+			font-size: 24px
+			padding: 20px 0
+			letter-spacing: 0.1px
+	.btn--large
+		padding: 12px 15px
+	/*WORKS*/
+	.section-title
+		margin: 98px 0 35px
+		letter-spacing: 0
+	.works__item
+		width: 235px
+		height: 400px
+		margin-right: 20px
+		margin-bottom: 0
+		&--last
+			margin-right: 0
 
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+@media only screen and (min-width : 960px)
+	.container
+		max-width: 960px
+		padding: 0 10px
+	.header__top
+		padding: 37px 0 0
+	.header__title
+		padding: 0 160px
+	.header__top-logo
+		margin-left: 0
+	/*WORKS*/
+	.works__item
+		width: 300px
+		height: 400px
 
 
 /* Large Devices, Wide Screens */
