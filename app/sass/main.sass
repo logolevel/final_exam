@@ -7,12 +7,68 @@
 	font-size: 22px
 	margin: 37px 0 15px
 	letter-spacing: 0.2px
-.works__item
+.btn--mini
+	background-color: $accent-color
+	padding: 2px 14px
+	letter-spacing: 2px
+.works__wrap
+	width: 300px
+	margin: 0 auto
+.works__slider
 	width: 300px
 	height: 240px
-	background-color: #eee
 	float: left
 	margin-bottom: 10px
+	&-item
+		width: 100%
+		height: 100%
+		position: relative
+		&--last
+			margin-bottom: 0
+	&-img
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		height: 240px
+		border-radius: 4px
+		&:after
+			content: ''
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+	&-description
+		position: absolute
+		bottom: 0
+		left: 0
+		text-align: left
+		padding: 20px
+		&__btn
+			font-family: $sub-font
+			color: #fff
+			font-size: 10px
+		&__title
+			color: #fff
+			font-size: 24px
+			margin: 19px 0 17px
+			line-height: 27px
+		&__paragraph
+			color: #ccc
+			font-size: 14px
+			line-height: 18px
+			font-family: $text-font
+.item-img-1
+	background-image: url("../img/slide1.jpg")
+.item-img-2
+	background-image: url("../img/slide2.jpg")
+.item-img-3
+	background-image: url("../img/slide3.jpg")
+/*controls*/
+aside[id*="-control"] .slidr-control.right:after,
+aside[id*="-control"] .slidr-control.left:after,
+aside[id*="-control"] .slidr-control.up:after
+  border-color: transparent !important
 /*SECTION PARTNERS*/
 .section-title--partners
 	margin-top: 29px
@@ -91,11 +147,13 @@
 .search__input-text
 	width: 280px
 	padding: 12px 18px
+	margin: 0 auto
 	margin-bottom: 10px
 	border: 1px solid #ccc
 	border-radius: 4px
 	box-shadow: 0 1px 0 #eee
 	outline: 0
+	display: block
 .btn--large-input
 	padding: 10px 85px
 	cursor: pointer

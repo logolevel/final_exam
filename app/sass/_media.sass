@@ -93,13 +93,35 @@
 	.section-title
 		margin: 98px 0 35px
 		letter-spacing: 0
-	.works__item
+	.works__wrap
+		width: 750px
+	.works__slider
 		width: 235px
 		height: 400px
-		margin-right: 20px
 		margin-bottom: 0
-		&--last
-			margin-right: 0
+		margin-right: 20px
+		&-img
+			height: 400px
+	/*controls*/
+	aside[id*="-control"] .slidr-control.right,
+	aside[id*="-control"] .slidr-control.left
+		width: 30px !important
+		height: 56px !important
+		top: 50% !important
+		margin-top: -160px !important
+		background-image: url(../sprites/sprite.png)
+		opacity: 0.4
+	aside[id*="-control"] .slidr-control.right
+		right: 25px !important
+		background-position: -30px 0px
+	aside[id*="-control"] .slidr-control.left
+		left: 25px !important
+		background-position: 0 0
+	aside[id*="-control"] .slidr-control.right:hover,
+	aside[id*="-control"] .slidr-control.left:hover
+	  opacity: 1
+	.works__slider--last
+		margin-right: 0
 	/*PARTNERS*/
 	.section-title--partners
 		margin-bottom: 33px
@@ -122,6 +144,7 @@
 	.search__input-text
 		width: 235px
 		margin-right: 20px
+		display: inline
 	.btn--large-input
 		padding: 10px 25px
 	/*FOOTER*/
@@ -159,9 +182,14 @@
 	.header__top-logo
 		margin-left: 0
 	/*WORKS*/
-	.works__item
+	.works__wrap
+		width: 940px
+	.works__slider
 		width: 300px
-		height: 400px
+	/*controls*/
+	aside[id*="-control"] .slidr-control.left,
+	aside[id*="-control"] .slidr-control.right
+		margin-top: -48px !important
 	/*PARTNERS*/
 	.partners__item
 		float: left

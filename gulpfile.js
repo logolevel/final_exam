@@ -18,7 +18,6 @@ var gulp 				 = require('gulp')
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.sass')
 		.pipe(sass())
-		.pipe(plumber())
 		.pipe(autoprefixer(['last 15 versions','ie 8'], { cascade: true }))
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSynk.reload({stream: true}))
@@ -26,7 +25,6 @@ gulp.task('sass', function() {
 /*concat js*/
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/jquery/jquery.min.js',
 		'app/libs/**/*.js'
 	])
 	.pipe(concat('libs.min.js'))
