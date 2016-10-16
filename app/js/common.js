@@ -11,3 +11,18 @@ slidr.create('slidr-second', {
 slidr.create('slidr-third', {
 	transition: 'cube'
 }).add('h', ['one', 'two', 'three', 'one']).start();
+
+/*masonry*/
+/*init Isotope*/
+var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid__item',
+  columnWidth: '.grid__sizer',
+  percentPosition: true
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  /*layout Masonry after each image loads*/
+  msnry.layout();
+});
