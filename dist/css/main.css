@@ -549,7 +549,7 @@ aside[id*="-control"] .slidr-control.up:after {
     margin: 0 auto; }
   /*IDEAS*/
   .grid {
-    width: 100%; }
+    width: 768px; }
     .grid__item, .grid__sizer {
       width: 31.33%;
       margin: 0.9%; }
@@ -617,7 +617,7 @@ aside[id*="-control"] .slidr-control.up:after {
     max-width: 100%; }
   /*IDEAS*/
   .grid {
-    width: 100%; }
+    width: 960px; }
   /*SEARCH*/
   .search__paragraph {
     margin-bottom: 42px; }
