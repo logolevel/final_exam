@@ -22,9 +22,9 @@ var msnry = new Masonry( grid, {
 });
 
 /*XMLHttpRequest*/
-function createRequest(key){
+function createRequest( word ){
     var apiKey = '3324605-cd4276f44c6c24381ca9603e8';
-	var url = 'https://pixabay.com/api/?key='+ apiKey +'&image_type=photo&pretty=true&per_page=7&q=' + key + '&r=' + Math.random();
+	var url = 'https://pixabay.com/api/?key='+ apiKey +'&image_type=photo&pretty=true&per_page=7&q=' + word + '&r=' + Math.random();
     
     if (window.XMLHttpRequest) {
         xhr = new XMLHttpRequest();
@@ -54,8 +54,8 @@ function createRequest(key){
 
 //eventBtnSearch
 function eventBtnSearch() {
-    var key = document.getElementById('input_text').value;
-    createRequest( key );
+    var word = document.getElementById('input_text').value;
+    createRequest( word );
     document.getElementById('begin_masonry').scrollIntoView();
 }
 
