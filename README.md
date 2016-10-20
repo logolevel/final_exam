@@ -11,7 +11,6 @@ Mobile first, js sliders, masinry with ajax request
 	<li>IE8+</li>
 </ul>
 <p>For ajax request work in IE8 change browser options:</p>
-<code>
 	<ol>
 		<li>Menu > Tools > Internet Optionsli>
 		<li>Security > Zone(Internet) > Custom level</li>
@@ -23,4 +22,3 @@ Mobile first, js sliders, masinry with ajax request
 				</ul>
 		</li>
 	</ol>
-</code>
