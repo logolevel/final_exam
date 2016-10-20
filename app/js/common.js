@@ -1,13 +1,13 @@
 /*sliders*/
-/*first*/
+//first
 slidr.create('slidr-first', {
 	transition: 'cube'
 }).add('h', ['one', 'two', 'three', 'one']).start();
-/*second*/
+//second
 slidr.create('slidr-second', {
 	transition: 'cube'
 }).add('h', ['one', 'two', 'three', 'one']).start();
-/*third*/
+//third
 slidr.create('slidr-third', {
 	transition: 'cube'
 }).add('h', ['one', 'two', 'three', 'one']).start();
@@ -22,32 +22,34 @@ var msnry = new Masonry( grid, {
 });
 
 /*XMLHttpRequest*/
+
+function randomizer() {
+    return words["tag"][Math.round(Math.random()*10)];
+}
+var word = randomizer();
+
+//main function for ajax request
 function createRequest( word ){
     var apiKey = '3324605-cd4276f44c6c24381ca9603e8';
 	var url = 'https://pixabay.com/api/?key='+ apiKey +'&image_type=photo&pretty=true&per_page=7&q=' + word + '&r=' + Math.random();
-    
+//for IE8
     if (window.XMLHttpRequest) {
         xhr = new XMLHttpRequest();
     } else {
         xhr = new ActiveXObject('Microsoft.XMLHTTP');
     }
-
-    // var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
-    // var xhr = new XHR();
-
+//ajax request
     xhr.onreadystatechange = function( data ) {
 
         if (this.readyState == 4 && this.status == 200) {
             data = JSON.parse(this.responseText);
-            console.log(data);
             updImg(data);
-
+//imageLoaded for masonry
             imagesLoaded( grid ).on( 'progress', function() {
   					     msnry.layout();
 						});
         }
     };
-
 		xhr.open('GET', url, true);
 		xhr.send();
 }
@@ -58,23 +60,43 @@ function eventBtnSearch() {
     createRequest( word );
     document.getElementById('begin_masonry').scrollIntoView();
 }
+//event for click btn
+var btnSearch = document.getElementById('btn_search');
 
-//event btn
-document.getElementById('btn_search').addEventListener('click', function(){
+if (btnSearch.addEventListener) {
+    btnSearch.addEventListener("click", function(){
     eventBtnSearch();
 });
+}//IE8
+else {
+    btnSearch.attachEvent("onclick", function(){
+    eventBtnSearch();
+});
+}
 
-//event enter
-document.getElementById('input_text').addEventListener('keyup', function (e) {
+//event for enter button
+var inputText = document.getElementById('input_text');
+
+if (inputText.addEventListener) {
+    inputText.addEventListener("keyup", function (e) {
     if (e.keyCode == 13) {
         eventBtnSearch();
     }
 });
+}
+//IE8
+else {
+    inputText.attachEvent("onkeyup", function (e) {
+    if (e.keyCode == 13) {
+        eventBtnSearch();
+    }
+});
+}
 
 //create image tile
 function updImg( data ) {
-    var items = document.getElementsByClassName("grid__item-img");
-    var titles = document.getElementsByClassName("grid__item-title");
+    var items = document.querySelectorAll(".grid__item-img");
+    var titles = document.querySelectorAll(".grid__item-title");
 
     for ( var i = 0; i < data.hits.length; i++ ) {
         items[i].setAttribute( 'src', data.hits[i].webformatURL );
@@ -83,4 +105,4 @@ function updImg( data ) {
 }
 
 //default xhr
-createRequest('travel friends');
+createRequest(word);

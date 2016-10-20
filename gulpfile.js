@@ -3,7 +3,7 @@ var gulp 				 = require('gulp')
 		sass 				 = require('gulp-sass'),
 		browserSynk  = require('browser-sync'),
 		concat			 = require('gulp-concat'),
-		uglify			 = require('gulp-uglifyjs'),
+		// uglify			 = require('gulp-uglifyjs'),
 		cssnano			 = require('gulp-cssnano'),
 		rename			 = require('gulp-rename'),
 		del					 = require('del'),
@@ -12,6 +12,7 @@ var gulp 				 = require('gulp')
 		cache				 = require('gulp-cache'),
 		autoprefixer = require('gulp-autoprefixer'),
 		spritesmith  = require('gulp.spritesmith'),
+		uglify 			 = require('gulp-uglify'),
 		plumber 		 = require('gulp-plumber');
 
 /*convert sass to css*/
@@ -28,7 +29,7 @@ gulp.task('scripts', function() {
 		'app/libs/**/*.js'
 	])
 	.pipe(concat('libs.min.js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
 /*concat css*/
