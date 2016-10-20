@@ -11,20 +11,16 @@ Mobile first, js sliders, masinry with ajax request
 	<li>IE8+</li>
 </ul>
 <p>For ajax request work in IE8 change browser options:</p>
-<ol>
-	<li>
-		<code>Menu > Tools > Internet Options</code>
-	</li>
-	<li>
-		<code>Security > Zone(Internet) > Custom level</code>
-	</li>
-	<li>
-		<code>
-			<ul>
-				<li>Settings:</li>
-				<li>- Ititialize and scripts ActiveX controls not marked as safe for scripting(not secure) > Enable</li>
-				<li>- Miscellaneous > Access data sources across domains > Enable</li>
-			</ul>
-		</code>
-	</li>
-</ol>
+<code>
+	<ol>
+		<li>Menu > Tools > Internet Optionsli>
+		<li>Security > Zone(Internet) > Custom level</li>
+		<li>
+				<ul>
+					<li>Settings:</li>
+					<li>- Ititialize and scripts ActiveX controls not marked as safe for scripting(not secure) > Enable</li>
+					<li>- Miscellaneous > Access data sources across domains > Enable</li>
+				</ul>
+		</li>
+	</ol>
+</code>
