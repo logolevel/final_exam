@@ -23,6 +23,8 @@
 		width: 100%
 		height: 100%
 		position: relative
+		overflow: hidden
+		border-radius: 4px
 		&--last
 			margin-bottom: 0
 	&-img
@@ -30,7 +32,6 @@
 		background-repeat: no-repeat
 		background-size: cover
 		height: 240px
-		border-radius: 4px
 		&:after
 			content: ''
 			width: 100%
@@ -38,7 +39,6 @@
 			position: absolute
 			top: 0
 			left: 0
-			border-radius: 4px
 	&-description
 		position: absolute
 		bottom: 0
@@ -193,11 +193,14 @@ aside[id*="-control"] .slidr-control.up:after
 	margin-top: 40px
 	padding-top: 17px
 	&__logo
+		width: 110px
 		color: $accent-color
 		font-size: 16.02px
 		letter-spacing: 1px
 		&:hover
 			color: $accent-hover
+.footer__copy-logo-img
+	width: 110px
 .footer-menu__title
 	margin: 15px 0 4px
 	font-size: 14.02px
@@ -208,6 +211,9 @@ aside[id*="-control"] .slidr-control.up:after
 .footer-menu__link
 	color: $text-color
 	display: block
+	&:hover
+		color: $text-color
+		text-decoration: underline
 .footer__copy-title
 	color: #ccc
 	text-transform: uppercase

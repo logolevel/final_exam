@@ -17,7 +17,7 @@ Mobile first, js sliders, masonry with AJAX request
 	<li>Security > Zone(Internet) > Custom level</li>
 	<li>Settings:
 			<ul>
-				<li>- Ititialize and scripts ActiveX controls not marked as safe for scripting(not secure) > Enable</li>
+				<li>- ActiveX controls and plug-ins > Ititialize and scripts ActiveX controls not marked as safe for scripting(not secure) > Enable</li>
 				<li>- Miscellaneous > Access data sources across domains > Enable</li>
 			</ul>
 	</li>
