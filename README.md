@@ -13,7 +13,7 @@ Mobile first, js sliders, masonry with AJAX request
 	<li>Native JavaScript</li>
 	<li>IE8+</li>
 </ul>
-<div><img src="screencast_u.gif" alt=""></div>
+<div style="align: center"><img src="screencast_u.gif" alt=""></div>
 <p>For AJAX request work in IE8 change browser options:</p>
 <div>
 <ol>
